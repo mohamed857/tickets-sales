@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+.matable {
+    width: auto;
+    background-color: #FFF;
+    border-radius: 12.474px;
+}
+
+.matable>thead>tr>th {
+    text-align: center;
+}
+
+.matable>tbody>tr>td {
+    text-align: center;
+}
+
+.matable>tbody>tr {
+    height: 20px;
+}
+
+.line {
+    flex: 1;
+    height: 264px;
+    border-radius: 12.474px;
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.table {
+    width: auto;
+}
+
+.ticket {
+    background: #8A74F9;
+    border-radius: 12.474px;
+    color: #FFF;
+}
+
+/* .ticket:before {
+    content: '';
+    position: absolute;
+    border-bottom: 2.4948px rgba(255, 255, 255, 0.4) dashed;
+    height: 280px;
+    width: 408px;
+    transform: translateY(-45%) translateX(-50%);
+    border-radius: 25.97919px;
+} */
+
+.ticketLink {
+    background: white;
+    border-radius: 8.32px;
+    color: black;
+}
+
+.cinema-name {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    /* background-color: #f2f2f2; */
+    /* border-radius: 5px; */
+    cursor: pointer;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border: 1px solid; */
+    text-overflow: ellipsis;
+}
+
+.cinema-name[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-110%) translateY(-80%);
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cinema-name[data-tooltip]:hover::after {
+    opacity: 1;
+}
+
+.btn-new {
+    background-color: #8A74F9;
+    color: #FFF;
+    margin-bottom: 0;
+    position: relative;
+    
+}
+
+
+.btn-new:hover {
+    background: #f6c2ec;
+}
+
+
+@media only screen and (max-width: 770px) {
+    .ticket {
+        width: 200px;
+    }
+
+    .charts {
+        width: 100% !important;
+    }
+}

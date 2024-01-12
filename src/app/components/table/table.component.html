@@ -1,0 +1,59 @@
+<div class="container px-2">
+
+
+  <!-- <div class="cinema-container">
+    <span class="cinema-name" data-tooltip="Cinema Name 1">Cinema Name 1</span>
+    <span class="cinema-name" data-tooltip="Cinema Name 2">Cinema Name 2</span>
+    <span class="cinema-name" data-tooltip="Cinema Name 3">Cinema Name 3</span>
+    <span class="cinema-name" data-tooltip="Cinema Name 4">Cinema Name 4</span>
+    <span class="cinema-name" data-tooltip="Cinema Name 5">Cinema Name 5</span>
+    <span class="cinema-name" data-tooltip="Cinema Name 6">Cinema Name 6</span>
+    <span class="cinema-name" data-tooltip="Cinema Name 7">Cinema Name 7</span>
+    <span class="cinema-name" data-tooltip="Cinema Name 8">Cinema Name 8</span>
+  </div> -->
+
+  <button class="btn btn-new">تذكرة جديدة</button>
+<table datatable [dtOptions]="dtoptions" [dtTrigger]="dtTrigger" class="matable">
+    <thead>
+      <tr>
+        <th scope="col">التذكرة</th>
+        <th scope="col">عدد مرات الشراء</th>
+        <th scope="col">عدد الاشخاص</th>
+        <th scope="col">السينمات</th>
+        <th scope="col">قيمى التذكرة  <!--<i class="bi bi-arrow-down-up"></i> --></th>
+        <th scope="col">رقم التذكرة</th>
+        <th scope="col">المستخدم</th>
+        <th scope="col">#</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (ticket of ticketss.data; track $index) {
+        <tr>
+          <td><a href=""><i class="bi bi-file-arrow-down"></i> تذكرة رقم {{ticket.ticketId}}</a></td>
+          <td>1</td>
+          <td>{{ticket.adultCount+ticket.childCount}}</td>
+          <!-- <td><span data-tooltip="hellow">{{place}}</span></td> -->
+          <td class="cinema-name" [attr.data-tooltip]="place">{{place}}</td>
+          <td>{{ticket.finalAmount}}</td>
+          <td>{{ticket.ticketNo}}</td>
+          <td>
+            <div class="row m-0">
+              <div class="col-md-9">
+                <p class="m-0">{{ticket.customerName}}</p>
+                <small class="fw-lighter">{{ticket.mobileNo}}</small>
+              </div>
+              <div class="col-md-3 p-0">
+                <img class="rounded-circle" width="45" height="45"
+                [src]="img" alt="a">
+              </div>
+            </div>
+          </td>
+          <th scope="row">{{$index}}</th>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
+
+
+  

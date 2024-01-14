@@ -3,12 +3,12 @@
         <div class="col-md-2">
             <button class="btn btn-outline-light"><i class="bi bi-trash3"></i></button>
         </div>
-        <div class="col-md-10 text-end">
+        <div class="col-md-10 text-center">
             عرض التذكرة الخاصة بالفيلم
         </div>
     </div>
     <div class="row ticketLink mx-5 px-0">
-        <p class="my-2 px-0 text-center"><a href=""><i class="bi bi-copy"></i> </a> www.tazkty.com/473847</p>
+        <p class="my-2 px-0 text-center"><button (click)="copyToClipboard()"  class="btn bi-copy"></button> <span >{{clip}}</span></p>
     </div>
     <div class="row  p-2">
         <p class="text-center">فعال حتي</p>

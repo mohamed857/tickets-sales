@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './ticket.component.css'
 })
 export class TicketComponent {
+ clip='www.tazkty.com/473847'
+  copyToClipboard=()=>{
+    navigator.clipboard.writeText(this.clip)
+    console.log(this.clip);
+  }
 
 }

@@ -21,6 +21,10 @@ export class ChartComponent {
   lineChart = new Chart({
     chart: {
       type: 'areaspline',
+      
+    },
+    plotOptions:{
+      
     },
     title: {
       text: 'إحصايات إستخدام القسيمة'
@@ -28,6 +32,7 @@ export class ChartComponent {
     subtitle: {
       text: "new Date(5/11/2022)"
     },
+    
     legend: {
       layout: 'vertical',
       align: 'left',
@@ -38,12 +43,17 @@ export class ChartComponent {
       borderWidth: 1,
     },
     credits: {
-      enabled: false
+      enabled: false,
     },
     xAxis: {
       categories: ["ديسمبر", "نوفمبر", "اكتوبر", "سبتمبر", "أغسطس", "يولبو",
-        "يونيو", "مايو", "ابريل", "مارس", "فبراير", "يناير"]
+        "يونيو", "مايو", "ابريل", "مارس", "فبراير", "يناير"],
+        
     },
+    // yAxis: {
+    //   categories: ["ديسمبر", "نوفمبر", "اكتوبر", "سبتمبر", "أغسطس", "يولبو",
+    //     "يونيو", "مايو", "ابريل", "مارس", "فبراير", "يناير"]
+    // },
     series: [
       this.values,
       // {

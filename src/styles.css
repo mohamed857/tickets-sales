@@ -1,9 +1,10 @@
 
 
 .matable {
-    width: auto;
+    width: 100%;
     background-color: #FFF;
     border-radius: 12.474px;
+    table-layout: fixed;
 }
 
 .matable>thead>tr>th {
@@ -30,9 +31,6 @@
 
 }
 
-.table {
-    width: auto;
-}
 
 .ticket {
     background: #8A74F9;
@@ -104,10 +102,13 @@
 
 @media only screen and (max-width: 770px) {
     .ticket {
-        width: 200px;
+        width: 50%;
     }
 
     .charts {
         width: 100% !important;
+    }
+    .matable{
+        width: fit-content;
     }
 }

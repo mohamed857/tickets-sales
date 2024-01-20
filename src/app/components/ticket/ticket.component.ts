@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { QRCodeModule } from "angularx-qrcode";
 
 @Component({
   selector: 'app-ticket',
   standalone: true,
-  imports: [],
+  imports: [QRCodeModule],
   templateUrl: './ticket.component.html',
   styleUrl: './ticket.component.css'
 })

@@ -8,7 +8,7 @@
 }
 
 .matable>thead>tr>th {
-    text-align: center;
+    text-align: start;
 }
 
 .matable>tbody>tr>td {
@@ -36,22 +36,27 @@
     background: #8A74F9;
     border-radius: 12.474px;
     color: #FFF;
+    position: relative;
+    overflow: hidden;
 }
 
-/* .ticket:before {
+.tickett:before {
     content: '';
     position: absolute;
-    border-bottom: 2.4948px rgba(255, 255, 255, 0.4) dashed;
-    height: 280px;
-    width: 408px;
-    transform: translateY(-45%) translateX(-50%);
-    border-radius: 25.97919px;
-} */
+    border-bottom: 3.4948px rgba(255, 255, 255, 0.4) dashed;
+    height: 9%;
+    width: 100%;
+    transform: translateY(-50%);
+}
 
 .ticketLink {
-    background: white;
-    border-radius: 8.32px;
+    background-color: #FFF;
     color: black;
+    border-radius: 12px;
+    width: fit-content;
+    /* padding: 5PX; */
+    padding-top: 15PX;
+    font-weight: bold;
 }
 
 .cinema-name {
@@ -61,7 +66,7 @@
     /* background-color: #f2f2f2; */
     /* border-radius: 5px; */
     cursor: pointer;
-    width: 200px;
+    width: 150px;
     white-space: nowrap;
     overflow: hidden;
     /* border: 1px solid; */

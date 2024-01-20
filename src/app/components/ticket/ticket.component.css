@@ -1,0 +1,12 @@
+.circle1{
+    border-radius: 50%;
+    background-color: aliceblue;
+    left: 0;
+    width: 20px;
+}
+.circle2{
+    border-radius: 50%;
+    background-color: aliceblue;
+    right: 0;
+    width: 20px;
+}

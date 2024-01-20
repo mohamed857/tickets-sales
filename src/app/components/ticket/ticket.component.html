@@ -7,17 +7,26 @@
             عرض التذكرة الخاصة بالفيلم
         </div>
     </div>
-    <div class="row ticketLink mx-5 px-0">
-        <p class="my-2 px-0 text-center"><button (click)="copyToClipboard()"  class="btn bi-copy"></button> <span >{{clip}}</span></p>
+    <div class="row justify-content-center">
+        <div class="ticketLink">
+            <p><button (click)="copyToClipboard()" class="btn bi-copy" style="color: blueviolet;"></button>
+                <span>{{clip}}</span></p>
+        </div>
     </div>
     <div class="row  p-2">
         <p class="text-center">فعال حتي</p>
     </div>
-    <div class="row align-content m-0  py-2">
+    <div class="row justify-content-between tickett p-2">
+        <div class="circle1">s</div>
+        <div class="circle2"></div>
+    </div>
+    <div class="row m-0  py-2">
         <div class="col-md-5 m-1">
             <img width="50%"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Qrcode_wikipedia_fr_v2clean.png/900px-Qrcode_wikipedia_fr_v2clean.png?20160605221916"
                 alt="" class="img-fluid">
+            <!-- <qrcode [qrdata]="'Your data string'" [width]="90" [errorCorrectionLevel]="'M'"></qrcode> -->
+
         </div>
         <div class="col-md-4 align-self-end">
             <button class="btn btn-outline-light"> مشاركة <i class="bi bi-send"></i> </button>

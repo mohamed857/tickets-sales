@@ -1,44 +1,29 @@
 <div class="container px-2">
-
-
-  <!-- <div class="cinema-container">
-    <span class="cinema-name" data-tooltip="Cinema Name 1">Cinema Name 1</span>
-    <span class="cinema-name" data-tooltip="Cinema Name 2">Cinema Name 2</span>
-    <span class="cinema-name" data-tooltip="Cinema Name 3">Cinema Name 3</span>
-    <span class="cinema-name" data-tooltip="Cinema Name 4">Cinema Name 4</span>
-    <span class="cinema-name" data-tooltip="Cinema Name 5">Cinema Name 5</span>
-    <span class="cinema-name" data-tooltip="Cinema Name 6">Cinema Name 6</span>
-    <span class="cinema-name" data-tooltip="Cinema Name 7">Cinema Name 7</span>
-    <span class="cinema-name" data-tooltip="Cinema Name 8">Cinema Name 8</span>
-  </div> -->
-
-  <!-- <button class="btn btn-new">تذكرة جديدة</button> -->
   <div class="row p-0 m-0">
     <div class="col-md-3">
       <button class="bn54">
         <span class="bn54span">حجز تذكرة جديدة</span>
       </button>
     </div>
-      <div class="col-md-3" >
-        <label for="">{{activeText}}</label>
-        <label class="switch">
-          <input type="checkbox" (change)="activtety()">
-          <span class="slider round"></span>
-        </label>
-      </div>
-
+    <div class="col-md-3">
+      <label for="" style="width: 70px; text-align: end;">{{activeText}}</label>
+      <label class="switch">
+        <input type="checkbox" (change)="activtety()">
+        <span class="slider round"></span>
+      </label>
+    </div>
   </div>
   <table datatable [dtOptions]="dtoptions" [dtTrigger]="dtTrigger" class="matable">
     <thead>
       <tr>
-        <th scope="col">التذكرة</th>
-        <th scope="col">عدد مرات الشراء</th>
-        <th scope="col">عدد الاشخاص</th>
-        <th scope="col">السينمات</th>
-        <th scope="col">قيمى التذكرة <!--<i class="bi bi-arrow-down-up"></i> --></th>
-        <th scope="col">رقم التذكرة</th>
-        <th scope="col">المستخدم</th>
-        <th scope="col">#</th>
+        <th scope="col" style="text-align: end;">التذكرة</th>
+        <th scope="col" style="text-align: end;">عدد مرات الشراء</th>
+        <th scope="col" style="text-align: end;">عدد الاشخاص</th>
+        <th scope="col" style="text-align: end;">السينمات</th>
+        <th scope="col" style="text-align: end;">قيمى التذكرة <!--<i class="bi bi-arrow-down-up"></i> --></th>
+        <th scope="col" style="text-align: end;">رقم التذكرة</th>
+        <th scope="col" style="text-align: end;">المستخدم</th>
+        <th scope="col" style="text-align: end;">#</th>
       </tr>
     </thead>
     <tbody>
@@ -62,7 +47,7 @@
             </div>
           </div>
         </td>
-        <th scope="row">{{$index}}</th>
+        <td scope="row" >{{$index}}</td>
       </tr>
       }
     </tbody>

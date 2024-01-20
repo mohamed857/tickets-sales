@@ -7,8 +7,8 @@
     table-layout: fixed;
 }
 
-.matable>thead>tr>th {
-    text-align: start;
+.matable>thead {
+    background-color: #8A74F9;
 }
 
 .matable>tbody>tr>td {

@@ -1,6 +1,8 @@
 # Task
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+![image](https://github.com/user-attachments/assets/839fb7b0-23f5-41d9-93b5-56928e1b26de)
+
 
 ## Development server
 
